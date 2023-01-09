@@ -6,7 +6,6 @@ steps:
   args: 
   - '-c'
   - | 
-    gcloud storage buckets create gs://bucket-pmenezes --project=animated-alloy-369522 --default-storage-class=ARCHIVE --location=us-west1 --uniform-bucket-level-access
     terraform init
     terraform plan
     terraform apply -auto-approve
